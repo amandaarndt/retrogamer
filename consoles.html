@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retro Gamer</title>
+        <a href="homepage.html">
+            <h1 class="logo">
+                <img src="assets/logo.png">
+                <span>Sua loja mais completa!</span>
+            </h1>
+        </a>
+        
+        <div class="container">
+            <nav class="header">
+                <div class="dropdown">
+                    <a class="dropbtn">Consoles</a>
+                    <img src="assets/pixel_joystick.png" alt="sonic_ring">
+                    <div class="dropdown-content" id="myDropdownConsoles">
+                        <a href="#" data-type="all">Todos</a>
+                        <a href="#" data-type="mesa">De Mesa</a>
+                        <a href="#" data-type="portatil">Portáteis</a>
+                    </div>
+                </div>
+                    
+                    
+                <div class="dropdown">
+                    <a class="dropbtnJogos">Jogos</a>
+                    <img src="assets/pixel_game.png" alt="sonic_ring">
+                    <div class="dropdown-content" id="myDropdownJogos">
+                        <a href="jogos.html">Todos</a>
+                        <a href="jogos.html">De Mesa</a>
+                        <a href="jogos.html">Portáteis</a>
+                    </div>  
+                </div>  
+                
+                
+                <div class="price-filter-container">
+                    <img src="assets/pixel_money.png">
+                    <label for="price-range">Filtrar por preço:</label>
+                    <select id="price-range">
+                        <option value="low-to-high">Menor para maior</option>
+                        <option value="high-to-low">Maior para menor</option>
+                    </select>
+                </div>
+
+                
+             <div class="user">
+                    <img src="assets/user_icon.png" alt="Ícone do usuário">
+                    <a id="profile-link" href="userprofile.html">Perfil</a>
+                </div>      
+                
+            </nav>
+        </div>
+        <link rel="stylesheet" href="styles.css">
+
+        <div class="page-info">
+                <p><span id="current-section-consoles">Todos os Consoles</span></p>
+        </div>
+        
+    </head>
+<body>
+    
+    <div class="products">
+        <div class="product-item"></div>
+    </div>
+    
+    <script src="consoles.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+html {
+    background-image: url('assets/vaporwave_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center; 
+}
+a {
+    color: aqua;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    padding: 1rem;
+}
+.header {
+    justify-content: space-around;
+    display: flex;
+    border-radius: 1rem;
+    border: solid aqua 3px;
+    align-items: center;
+    box-shadow: 0px 0px 7px aqua;
+}
+.logo{
+    
+    color: aqua;
+}
+
+.logo img{
+    width: 6rem;
+}
+span{
+    padding: 0;
+    align-content: center;
+    font-size: 1rem;
+    color: aqua;
+}
+
+.consoles img {
+    width: 3rem;
+    padding: 1rem;
+}
+.jogos img {
+    width: 3rem;
+    padding: 1rem;
+}
+
+.user img{
+    width: 2rem;
+    padding: 1rem;
+}
+.header p {
+    margin: 0;
+    color: aqua;
+}
+
+.consoles, .jogos, .precos, .user{
+    display: flex;
+    align-items: center;   
+}
+
+.products{
+    display:inline;
+    padding: 1rem; 
+    overflow: hidden; 
+}
+
+.product-item{
+    padding: 4rem;
+}
+
+.product-itemGames{
+    display:inline;
+    padding: 1rem; 
+    overflow: hidden;
+}
+.product-itemConsoles{
+    display:inline;
+    padding: 1rem; 
+    overflow: hidden;
+}
+
+.products img{
+    width: 80%;
+}
+.product-images img{
+    width: 40%;
+}
+
+/* RegionDropdown */
+.dropdown{
+    display: flex;
+    align-items: center;
+}
+.dropdown a {
+    display: flex;
+    align-items: center; 
+}
+.consoles a:hover,
+.dropdown-content a:hover,
+.dropbtn:hover,
+.dropbtnJogos:hover,
+.jogos a:hover,
+.precos a:hover,
+.user a:hover,
+.wishList a:hover {
+    color: rgb(227, 40, 252);
+    text-shadow: 0px 0px 10px rgb(227, 40, 252);
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: aqua;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+.dropdown img{
+    width: 3rem;
+    padding-left: 1rem;
+}
+
+#myDropdownConsoles{
+    margin-top: -10px;
+    margin-left: -1rem;
+}
+#myDropdownJogos{
+    margin-top: -10px;
+    margin-left: -1rem;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 15.9rem;
+    min-width: 100px; 
+    padding: 12px;
+    border-radius: .5rem;
+    background-color: rgba(51, 0, 58, 0.486);
+    box-shadow: 0px 1px 10px rgb(227, 40, 252);
+}
+.dropdown-content a:not(:last-child) {
+    margin-bottom: 8px;
+}
+#myDropdownConsoles, #myDropdownJogos {
+    display: none; 
+}
+
+#myDropdownConsoles.show, #myDropdownJogos.show {
+    display: block;
+}
+/* EndRegionDropdown */
+
+fieldset{
+    border-radius: 1rem;
+    box-shadow: 0px 1px 10px rgb(247, 247, 247);
+}
+
+/* RegionCards */
+.product-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-description {
+    padding: 10px;
+}
+
+.product-card {
+    width: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgb(227, 40, 252);
+    background-color: rgba(51, 0, 58, 0.486);
+    padding: .7rem;
+    transition: transform 0.3s;
+    text-align: center;
+    margin: 10px;
+    color: aqua;
+    text-decoration: none;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(227, 40, 252, 0.5);
+}
+
+.product-images {
+    width: 95rem;
+    height: auto;
+    margin: 0; 
+    border-radius: 1rem 1rem 0 0; 
+    box-shadow: none; 
+}
+
+.product-info {
+    padding: 8px 12px;  
+}
+.product-info span {
+    color: whitesmoke;
+    
+}
+.product-info p {
+    color: aqua;  
+}
+
+.product-detail-container {
+    text-shadow: 1px 2px 0px #d6312f;
+    color: white;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    margin: 6px 0; 
+    display: block;
+    color: aqua;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #e728fc;
+    margin: 4px 0; 
+}
+
+.product-link:hover{
+    color: 	#f16026;
+}
+/* EndRegionCards */
+
+/* RegionCart */
+.cart-item {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+h2{
+    color: aqua;
+}
+.cart-item p {
+    margin: 5px 0 0 0;
+}
+
+.cart-button:hover{
+    cursor: pointer;
+    color: #f16026;;
+}
+.clear-cart{
+    background: transparent;
+    color:aqua;
+    outline: none;
+    border-radius: 1rem;
+}
+.remove-btn{
+    background: transparent;
+    color:aqua;
+    outline: none;
+    border-radius: 1rem;
+}
+.cart-button{
+    border-radius: 1rem;
+    border: none;
+    color:aqua;
+    font-size:medium;
+    font-weight: bold;
+    text-shadow: 1px 2px 0px #f16026;
+    background-color: transparent;
+}
+.product-name-cart{
+    color: #f16026;
+}
+/* EndRegionCart */
+
+/* RegionFilter */
+
+.price-filter-container img{
+    width: 1.5rem;
+    padding: 1rem;
+    align-items: baseline;
+}
+.price-filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: aqua;
+    border: none;
+    outline: none;
+}
+.price-filter-container:hover {
+    color: rgb(227, 40, 252);
+    text-shadow: 0px 0px 10px rgb(227, 40, 252);
+
+}
+#price-range {
+    border-radius: .3rem;
+    color: aqua;
+    outline: none;
+    background: transparent;
+    box-shadow: 0px 1px 10px rgb(227, 40, 252);
+}
+
+option {
+    border-radius: .3rem;
+    color: aqua;
+    background-color: rgba(51, 0, 58, 0.486);
+    box-shadow: 0px 1px 10px rgb(227, 40, 252);
+}
+
+
+.price-filter-container label {
+    margin-right: 12px;
+}
+
+.price-filter-container input {
+    width: 100px;
+}
+
+.price-filter-container img{
+    width: 1.7rem;
+    margin-right: 1rem;
+}
+
+/* EndRegionFilter */
+
+
+/* RegionProductDetail*/
+.page-info {
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.page-info h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.page-info p {
+    font-size: 20px;
+    color: #666;
+}
+
+.page-info span {
+    font-weight: bold;
+    color: aqua;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+.product-info img{
+    width: 1rem;
+}
+
+/* EndRegionProductDetail*/
+
+
+
+
+

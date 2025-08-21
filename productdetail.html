@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retro Gamer</title>
+        <a href="homepage.html">
+            <h1 class="logo">
+                <img src="assets/logo.png">
+                <span>Sua loja mais completa!</span>
+            </h1>
+        </a>
+        
+        <div class="container">
+            <nav class="header">
+                
+                <div class="consoles">
+                    <a href="consoles.html">Consoles</a>
+                    <img class="consoles" src="assets/pixel_joystick.png" alt="sonic_ring">
+                </div>
+                    
+                <div class="jogos">
+                    <a href="jogos.html">Jogos</a>
+                    <img src="assets/pixel_game.png" alt="sonic_ring">
+                </div> 
+                
+                
+                <div class="price-filter-container">
+                    <img src="assets/pixel_money.png" alt="sonic_ring">
+                    <label for="price-range">Filtrar por preço:</label>
+                    <select id="price-range">
+                        <option value="low-to-high">Menor para maior</option>
+                        <option value="high-to-low">Maior para menor</option>
+                    </select>
+                </div>
+                
+            
+             <div class="user">
+                    <img src="assets/user_icon.png" alt="Ícone do usuário">
+                    <a id="profile-link" href="userprofile.html">Perfil</a>
+                </div>
+                
+                
+                
+            </nav>
+        </div>
+        <link rel="stylesheet" href="styles.css">    
+        
+    </head>
+<body>
+    <div class="product-detail-container">
+        <header>
+            <h2>Detalhes do Produto</h2>
+        </header>
+
+        <div class="product-detail">
+            <div class="product-images">
+                <img id="main-image" src="" alt="Imagem do Produto" class="main-image">
+            </div>
+
+            <div class="product-info">
+                <h2 id="product-name">Nome do Produto</h2>
+                <p><strong>Preço:</strong> <span id="product-price">R$ 0,00</span></p>
+                <p><strong>Data:</strong> <span id="product-data">R$ 0,00</span></p>
+                <p><strong>Descrição:</strong> <span id="product-description">Descrição do produto.</span></p>
+                <p><strong>Estado:</strong> <span id="product-condition">Novo</span></p>
+                <p><strong>Garantia:</strong> <span id="product-warranty">12 meses</span></p>
+                <p><strong>Gategoria:</strong> <span id="product-type">De Mesa</span></p>
+                <strong><a id="product-link" class="product-link"></a><br><br></strong>
+                <button class="cart-button" id="cart-button">Adicionar a Lista de Desejos</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 E-commerce de Jogos</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
